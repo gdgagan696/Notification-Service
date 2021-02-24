@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Approver Email Template</title>
+</head>
+<body>
+<h3> Dear <span th:text="${producerName}"></span></h3>
+<p>
+
+You have got an order from <b><span th:text="${consumerName}"></span></b> with order Id: <b><span th:text="${orderId}"></span></b>
+<br>
+Please check your dashboard to approve or reject it.
+</p>
+Thanks & Regards
+<br>
+Admin
+
+</body>
+</html>

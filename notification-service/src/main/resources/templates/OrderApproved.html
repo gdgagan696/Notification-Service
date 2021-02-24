@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Order Approved Email Template</title>
+</head>
+<body>
+
+	<h3>
+		Dear <span th:text="${consumerName}"></span>
+	</h3>
+	<p>
+	Your order has been approved by the producer.
+	<br>
+	Details of the order are given below:
+	</p><br>
+	<p>Order Id:<span th:text="${orderId}"></span></p>
+	<p>Order Status:<span th:text="${orderStatus}"></span></p>
+	<p>Work Description:<span th:text="${workDescription}"></span></p>
+	<p>Producer Name:<span th:text="${producerName}"></span></p>
+	<p>Producer Email:<span th:text="${producerEmail}"></span></p>
+	
+
+	Thanks & Regards
+	<br>
+	Admin
+
+</body>
+</html>
